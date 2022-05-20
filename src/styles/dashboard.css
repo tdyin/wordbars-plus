@@ -1,0 +1,32 @@
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  'nav nav'
+  'res col'
+  'res col';
+  grid-template-rows: auto 1fr 8vh;
+  grid-template-columns: 4fr 1fr ;
+}
+
+footer,
+main,
+aside{
+  border: lightgray 0.5px solid;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: res;
+}
+
+aside {
+  grid-area: col;
+}
+
+footer {
+  grid-area: foo;
+}
